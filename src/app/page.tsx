@@ -13,12 +13,12 @@ export default function Home() {
     <Container>
       <Hero />
       <SectionTitle
-        preTitle="Nextly Benefits"
-        title=" Why should you use this landing page"
+        preTitle="Crontrack Benefits"
+        title=" Why should you use Crontrack"
       >
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+        Unlike other social media management software, Crontrack is known for its simplicity. 
+        It is easy to use due to its user-friendliness. It helps users schedule posts, monitor what matters, 
+        and create custom reports to analyze social media performance.
       </SectionTitle>
 
       <Benefits data={benefitOne} />

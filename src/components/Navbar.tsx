@@ -1,8 +1,9 @@
 "use client";
 import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
-import Image from "next/image"
+import { UserIcon } from '@heroicons/react/24/solid';
 import { Disclosure } from "@headlessui/react";
+import { constants } from "@/constants";
 
 export const Navbar = () => {
   const navigation = [
@@ -28,9 +29,15 @@ export const Navbar = () => {
         {/* get started  */}
         <div className="gap-3 nav__item mr-2 lg:flex ml-auto lg:ml-0 lg:order-2">
             <ThemeChanger />
+            <div className="hidden mr-2 lg:flex nav__item">
+              <Link href={`${constants.APP_BASE_URL}/login`} className="flex items-center justify-center w-24 text-nowrap text-indigo-600 dark:text-white rounded-md md:ml-5">
+                <UserIcon className="w-5 mr-2"/>
+                Log In
+              </Link>
+            </div>
             <div className="hidden mr-3 lg:flex nav__item">
-              <Link href="/" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
-                Get Started
+              <Link href={`${constants.APP_BASE_URL}/signup`} className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
+                Sign Up
               </Link>
             </div>
         </div>
@@ -68,7 +75,7 @@ export const Navbar = () => {
                           {item}
                       </Link>
                     ))}
-                    <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">         
+                    <Link href={`${constants.APP_BASE_URL}/signup`} className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">         
                         Get Started
                     </Link>
                   </>
