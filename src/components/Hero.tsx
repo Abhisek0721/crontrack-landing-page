@@ -22,7 +22,7 @@ export const Hero = () => {
                 href={`${constants.APP_BASE_URL}/signup`}
                 target="_blank"
                 rel="noopener"
-                className="px-8 py-3 mt-5 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">
+                className="px-8 py-3 mt-5 text-lg font-medium text-center text-white bg-blue-800 dark:bg-blue-600 rounded-md ">
                 Get Started
               </a>
             </div>

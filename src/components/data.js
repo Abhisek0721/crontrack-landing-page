@@ -4,54 +4,56 @@ import {
   CursorArrowRaysIcon,
   DevicePhoneMobileIcon,
   AdjustmentsHorizontalIcon,
+  ClockIcon,
   SunIcon,
+  UserGroupIcon
 } from "@heroicons/react/24/solid";
 
 import benefitOneImg from "../../public/img/img3.png";
 import benefitTwoImg from "../../public/img/img2.png";
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  title: "Key Benefits",
+  desc: "Our platform offers several key features that make managing social media easier and more efficient. Below are some of the main benefits you can take advantage of.",
   image: benefitOneImg,
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
-      icon: <FaceSmileIcon />,
+      title: "Save Time with Post Scheduling",
+      desc: "Plan and schedule posts across all your social media accounts in advance, ensuring a consistent online presence.",
+      icon: <ClockIcon />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
+      title: "In-Depth Analytics & Reporting",
+      desc: "Track the performance of your posts and campaigns with detailed analytics, helping you make data-driven decisions.",
       icon: <ChartBarSquareIcon />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
+      title: "Unified Social Media Management",
+      desc: "Manage and monitor all your social media platforms from a single, intuitive dashboard.",
       icon: <CursorArrowRaysIcon />,
     },
   ],
 };
 
 const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
+  title: "Additional Features",
+  desc: "Our platform provides even more powerful tools to help you stay ahead in social media management. Below are some additional features you’ll find useful.",
   image: benefitTwoImg,
   bullets: [
     {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
+      title: "User-Friendly Experience",
+      desc: "Designed to be intuitive, our platform makes social media management accessible for beginners and experts alike.",
+      icon: <FaceSmileIcon />,
+    },
+    {
+      title: "Mobile-Friendly Access",
+      desc: "Use the platform on any device, whether you're at your desk or on the go. Our platform is fully mobile responsive.",
       icon: <DevicePhoneMobileIcon />,
     },
     {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
-      icon: <AdjustmentsHorizontalIcon />,
-    },
-    {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
-      icon: <SunIcon />,
+      title: "Seamless Team Collaboration",
+      desc: "Invite team members, assign roles, and collaborate effectively on social media strategies all within the platform.",
+      icon: <UserGroupIcon />,
     },
   ],
 };

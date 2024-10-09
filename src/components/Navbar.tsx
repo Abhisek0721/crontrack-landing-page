@@ -19,7 +19,7 @@ export const Navbar = () => {
       <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-1">
         {/* Logo  */}
         <Link href="/">
-          <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
+          <span className="flex items-center space-x-2 text-2xl font-medium text-blue-800 dark:text-gray-100">
               <span>
                 <img src={"/img/logo.png"} className=" w-[200px] rounded-[50%]" alt="" />
               </span>
@@ -30,13 +30,13 @@ export const Navbar = () => {
         <div className="gap-3 nav__item mr-2 lg:flex ml-auto lg:ml-0 lg:order-2">
             <ThemeChanger />
             <div className="hidden mr-2 lg:flex nav__item">
-              <Link href={`${constants.APP_BASE_URL}/login`} className="flex items-center justify-center w-24 text-nowrap text-indigo-600 dark:text-white rounded-md md:ml-5">
+              <Link href={`${constants.APP_BASE_URL}/login`} className="flex items-center justify-center w-24 text-nowrap text-blue-800 dark:text-white rounded-md md:ml-5">
                 <UserIcon className="w-5 mr-2"/>
                 Log In
               </Link>
             </div>
             <div className="hidden mr-3 lg:flex nav__item">
-              <Link href={`${constants.APP_BASE_URL}/signup`} className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
+              <Link href={`${constants.APP_BASE_URL}/signup`} className="px-6 py-2 text-white bg-blue-800 dark:bg-blue-600 rounded-md md:ml-5">
                 Sign Up
               </Link>
             </div>
