@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <Container>
       <Hero />
+      <div id="features"></div>
       <SectionTitle
         preTitle="Crontrack Benefits"
         title=" Why should you use Crontrack"
@@ -28,14 +29,12 @@ export default function Home() {
         preTitle="Watch a video"
         title="Learn how to fullfil your needs"
       >
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don&apos;t forget to add one. Just like this.
+        This section is to highlight a promo or demo video of Crontrack.
       </SectionTitle>
 
       <Video videoId="fZ0D0cnR88E" />
 
-      <SectionTitle
+      {/* <SectionTitle
         preTitle="Testimonials"
         title="Here's what our customers said"
       >
@@ -51,7 +50,7 @@ export default function Home() {
       </SectionTitle>
 
       <Faq />
-      <Cta />
+      <Cta /> */}
     </Container>
   );
 }
