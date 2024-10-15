@@ -2,27 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { Container } from "@/components/Container";
+import { navigation } from "./data/navigation";
 
 export function Footer() {
-  const navigation = [
-    {
-      "name": "Home",
-      "url": "/"
-    },
-    {
-      "name": "Features",
-      "url": "#features"
-    },
-    {
-      "name": "Pricing",
-      "url": "https://app.crontrack.com/legal/terms-and-conditions"
-    },
-    {
-      "name": "Our Team",
-      "url": "https://app.crontrack.com/legal/terms-and-conditions"
-    }
-  ];
-
   const legal = [
     {
       "name": "Terms",

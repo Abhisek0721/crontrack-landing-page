@@ -4,26 +4,9 @@ import ThemeChanger from "./DarkSwitch";
 import { UserIcon } from '@heroicons/react/24/solid';
 import { Disclosure } from "@headlessui/react";
 import { constants } from "@/constants";
+import { navigation } from "./data/navigation";
 
 export const Navbar = () => {
-  const navigation = [
-    {
-      "name": "Home",
-      "url": "/"
-    },
-    {
-      "name": "Features",
-      "url": "#features"
-    },
-    {
-      "name": "Pricing",
-      "url": "https://app.crontrack.com/legal/terms-and-conditions"
-    },
-    {
-      "name": "Our Team",
-      "url": "https://app.crontrack.com/legal/terms-and-conditions"
-    },
-  ];
 
   return (
     <div className="w-full">
