@@ -6,42 +6,48 @@ import { constants } from "@/constants";
 export const Hero = () => {
   return (
     <>
-      <Container className="flex flex-wrap ">
-        <div className="flex items-center w-full lg:w-1/2">
-          <div className="max-w-2xl mb-8">
-            <h1 className="text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
-              Simplify Your Social Media Management
-            </h1>
-            <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              Schedule unlimited posts, monitor what matters, and 
-              create custom-reports to analyze your social media performance with Crontrack.
-            </p>
+  <Container className="min-h-screen">
+  <div className="flex flex-col lg:flex-row flex-wrap py-28">
+    {/* Text Section */}
+    <div className="flex items-center w-full lg:w-1/2">
+      <div className="max-w-2xl mb-8 px-4 lg:px-0">
+        <h1 className="text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
+          Simplify Your Social Media Management
+        </h1>
+        <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
+          Schedule unlimited posts, monitor what matters, and create custom reports to analyze your social media performance with Crontrack.
+        </p>
+        <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
+          <a
+            href={`${constants.APP_BASE_URL}/signup`}
+            target="_blank"
+            rel="noopener"
+            className="px-8 py-3 mt-5 text-lg font-medium text-center text-white bg-blue-800 dark:bg-blue-600 rounded-md"
+          >
+            Get Started
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    {/* Image Section */}
+    <div className="flex items-center justify-center w-full lg:w-1/2 mt-10 lg:mt-0">
+      <div className="w-full">
+        <Image
+          src={heroImg}
+          width="616"
+          height="617"
+          className="object-cover"
+          alt="Hero Illustration"
+          loading="eager"
+          placeholder="blur"
+        />
+      </div>
+    </div>
+  </div>
+</Container>
 
-            <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
-              <a
-                href={`${constants.APP_BASE_URL}/signup`}
-                target="_blank"
-                rel="noopener"
-                className="px-8 py-3 mt-5 text-lg font-medium text-center text-white bg-blue-800 dark:bg-blue-600 rounded-md ">
-                Get Started
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="flex items-center justify-center w-full lg:w-1/2">
-          <div className="">
-            <Image
-              src={heroImg}
-              width="616"
-              height="617"
-              className={"object-cover"}
-              alt="Hero Illustration"
-              loading="eager"
-              placeholder="blur"
-            />
-          </div>
-        </div>
-      </Container>
+
       {/* <Container>
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-gray-700 dark:text-white">
