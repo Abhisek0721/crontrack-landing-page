@@ -29,7 +29,7 @@ export default function Home() {
         preTitle="Watch a video"
         title="Learn how to fullfil your needs"
       >
-        This section is to highlight a promo or demo video of Crontrack.
+        Crontrack is known for its simplicity.
       </SectionTitle>
 
       <Video videoId="fZ0D0cnR88E" />
