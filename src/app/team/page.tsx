@@ -24,7 +24,9 @@ export default function Team() {
                   <a href="#">Abhisekh Upadhaya</a>
                 </h3>
                 <span className="text-gray-500 dark:text-gray-400">Backend Developer</span>
-                <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Bonnie drives the technical strategy of the flowbite platform and brand.</p>
+                <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+                  Abhisekh specializes in backend development, driving the technical backbone of Crontrack.
+                </p>
                 <ul className="flex space-x-4 sm:mt-0">
                   <li className="flex justify-evenly w-[50%]">
                     <a href="https://www.facebook.com/abhisek.upadhaya.75" target="__blank" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
@@ -52,7 +54,9 @@ export default function Team() {
                   <a href="#">Rahul Kumar</a>
                 </h3>
                 <span className="text-gray-500 dark:text-gray-400">Frontend Developer</span>
-                <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Jese drives the technical strategy of the flowbite platform and brand.</p>
+                <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+                  Rahul brings Crontrack's vision to life with a dynamic and user-friendly interface.
+                </p>
                 <ul className="flex space-x-4 sm:mt-0">
                   <li className="flex justify-evenly w-[50%]">
                     <a href="https://www.facebook.com/profile.php?id=100077564808877" target="__blank" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
