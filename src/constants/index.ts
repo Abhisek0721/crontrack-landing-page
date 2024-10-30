@@ -1,3 +1,3 @@
 export const constants = {
-    APP_BASE_URL: "https://crontrack.com"
+    APP_BASE_URL: "https://app.crontrack.com"
 }
