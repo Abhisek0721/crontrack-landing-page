@@ -1,13 +1,13 @@
-"use client"; // Keep the client directive if required
-
+// src/app/layout.tsx (client-side)
+"use client"; // Mark this component as a Client Component
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
-import { usePathname } from "next/navigation";
+import { usePathname } from "next/navigation"; // Client-side hook
+import { metadata } from "./metadata"; // Import metadata from the server-side file
 import "./globals.css";
 
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { metadata } from "./metadata";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +16,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const pathname = usePathname();
+  const pathname = usePathname(); // Use of usePathname hook
 
   const isLegalPage = pathname.startsWith("/legal");
 
