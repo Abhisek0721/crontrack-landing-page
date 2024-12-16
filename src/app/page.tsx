@@ -25,14 +25,14 @@ export default function Home() {
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
 
-      <SectionTitle
+      {/* <SectionTitle
         preTitle="Watch a video"
         title="Learn how to fullfil your needs"
       >
         Crontrack is known for its simplicity.
       </SectionTitle>
 
-      <Video videoId="fZ0D0cnR88E" />
+      <Video videoId="fZ0D0cnR88E" /> */}
 
       {/* <SectionTitle
         preTitle="Testimonials"
